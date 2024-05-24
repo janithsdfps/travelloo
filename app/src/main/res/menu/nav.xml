@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/calendar"
+        android:title="@string/calender"
+        android:icon="@drawable/calendar" />
+
+    <item
+        android:id="@+id/booking"
+        android:title="@string/booking"
+        android:icon="@drawable/list_bulleted"
+        />
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:id="@+id/currency"
+        android:title="@string/curency"
+        android:icon="@drawable/currency"
+        />
+    <item
+        android:id="@+id/emergency"
+        android:title="@string/emergency"
+        android:icon="@drawable/emergency"
+        />
+
+
+
+
+</menu>
