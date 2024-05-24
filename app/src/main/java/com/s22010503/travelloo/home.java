@@ -78,7 +78,7 @@ public class home extends AppCompatActivity {
     private static final int AUTOCOMPLETE_REQUEST_CODE = 1;
 
 //    ProgressBar progressBar = findViewById(R.id.progressBar);
-    String apiKey="AIzaSyBa9k77lsF38OhYZ2s4TG6mL04iCJJnaQE";
+    String apiKey= BuildConfig.gAPi_key;
     LinearLayout profile,share,about,logout;
     private static final String TAG = "home";
 
@@ -478,60 +478,6 @@ public class home extends AppCompatActivity {
 
 
 }
-
-
-
-//place api code
-//searchBar.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//@Override
-//public boolean onQueryTextSubmit(String query) {
-//        processUserInput(query);
-//        return true;
-//        }
-//
-//@Override
-//public boolean onQueryTextChange(String query) {
-//        processUserInput(query);
-//        return false;
-//        }
-//
-//private void processUserInput(String query) {
-//
-//        try {
-//        // When the user submits the query, perform the API call
-//        String url = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input="
-//        + URLEncoder.encode(query, java.nio.charset.StandardCharsets.UTF_8.toString())
-//        + "&key=" + apikey                                                                                                                                                                                                                                                                                                                                                                                      ;
-//
-//
-//        OkHttpClient client = new OkHttpClient();
-//        Request request = new Request.Builder().url(url).build();
-//
-//        client.newCall(request).enqueue(new Callback() {
-//@Override public void onFailure(Call call, IOException e) {
-//        // Handle network errors
-//        }
-//
-//@Override public void onResponse(Call call, Response response) throws IOException {
-//        String jsonData = response.body().string();
-//
-//        // Gson Parsing
-//        Gson gson = new Gson();
-//        PlaceResponse placeResponse = gson.fromJson(jsonData, PlaceResponse.class);
-//
-//        // Access the predictions
-//        for (PlacePrediction prediction : placeResponse.predictions) {
-//        Log.i("Place Result", "ID: " + prediction.placeId + ", Name: " + prediction.description);
-//        }
-//        }
-//        });
-//        } catch (UnsupportedEncodingException e) {
-//        e.printStackTrace();
-//        // Handle the exception gracefully
-//        }
-//        }
-//        });
-
 
 
 

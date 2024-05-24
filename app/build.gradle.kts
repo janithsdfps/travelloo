@@ -17,6 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("string","gAPi_key","")
 
     }
 
@@ -32,6 +33,7 @@ android {
 
     buildFeatures{
         viewBinding = true
+        buildConfig=true
 
     }
 
